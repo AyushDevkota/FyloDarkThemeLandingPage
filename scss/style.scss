@@ -1,0 +1,46 @@
+@import './config';
+
+body {
+    // background: url('../images/bg-curvy-desktop.svg') no-repeat;
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+    color: $white;
+    line-height: 1.6
+}
+
+.header {
+    @include bg-color($dark-blue-email-intro-bg);
+    &-I {
+        justify-content: space-between;
+        align-items: center;
+        @include container(90%);
+        padding-top: 3em;
+        @include mg-y(3em);
+        img {
+            height: 2.5em;
+        }
+        ul {
+            gap: 2em;
+        }
+    }
+    &-II {
+        @include container(40%);
+        flex-direction: column;
+        text-align: center;
+        img, h1, p, button {
+            @include mg-y(1em);
+        }
+        button {
+            padding: 1em 5em;
+            align-self: center;
+            border-radius: 10em;
+            background-color: $blue;
+            border: none;
+            color: $white;
+        }
+    }
+}
+
+.main {
+    @include bg-color($dark-blue-main-bg);
+    }

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #1c2431;
+}
+
+.header-I {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3em;
+  margin-bottom: 3em;
+}
+
+.header-I img {
+  height: 2.5em;
+}
+
+.header-I ul {
+  gap: 2em;
+}
+
+.header-II {
+  width: 40%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.header-II img, .header-II h1, .header-II p, .header-II button {
+  margin-bottom: 1em;
+}
+
+.header-II button {
+  padding: 1em 5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 10em;
+  background-color: #339ecc;
+  border: none;
+  color: white;
+}
+
+.main {
+  background-color: #181f2a;
+}
+/*# sourceMappingURL=style.css.map */

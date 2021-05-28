@@ -13,7 +13,7 @@ $cyan: hsl(176, 68%, 64%);
 $dark-blue-testimonial-bg: hsl(219, 30%, 18%);
 $dark-blue-footer-bg: hsl(216, 53%, 9%);
 $dark-blue-main-bg: hsl(218, 28%, 13%);
-$dark-blue-email-intro-bg: hsl(217, 28%, 15%);
+$dark-blue-email-intro-bg: #1c2431;
 
 //Resets
 * {
@@ -25,13 +25,17 @@ a {
     text-decoration: none;
     color: $white;
     font-size: $body-font-size;
+    color: hsl(0, 0%, 70%);
 }
 li {
     list-style-type: none;
 }
-
 h1, h2, h3 {
     font-family: $non-body-font-family;
+}
+p {
+    color: hsl(0, 0%, 70%);
+    font-size: $body-font-size;
 }
 
 //Mixins
@@ -51,4 +55,7 @@ h1, h2, h3 {
 //Classes
 .d-flex {
     display: flex;
+}
+.grid {
+    display: grid;
 }

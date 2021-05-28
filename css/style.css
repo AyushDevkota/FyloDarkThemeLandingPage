@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+  color: #b3b3b3;
 }
 
 li {
@@ -21,10 +22,20 @@ h1, h2, h3 {
   font-family: "Raleway", sans-serif;
 }
 
+p {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 body {
@@ -32,9 +43,12 @@ body {
   font-family: "Open Sans", sans-serif;
   color: white;
   line-height: 1.6;
+  background-color: #181f2a;
 }
 
 .header {
+  position: relative;
+  z-index: 0;
   background-color: #1c2431;
 }
 
@@ -82,9 +96,60 @@ body {
   background-color: #339ecc;
   border: none;
   color: white;
+  margin-bottom: 18em;
 }
 
-.main {
-  background-color: #181f2a;
+.header-bg {
+  position: absolute;
+  bottom: 0em;
+  z-index: -1;
+  width: 100%;
+}
+
+.main-items {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 4em 8em;
+  position: relative;
+  margin-bottom: 10em;
+}
+
+.main-items .item {
+  gap: 1em;
+}
+
+.main-items .item img, .main-items .item h3 {
+  margin-bottom: 1em;
+}
+
+.main-items .item h3 {
+  font-size: 20px;
+}
+
+.production {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.5em;
+}
+
+.production .text-holder h2 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 0.35em;
+}
+
+.production .text-holder p {
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */
